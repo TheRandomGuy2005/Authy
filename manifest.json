@@ -1,0 +1,82 @@
+{
+   "action": {
+      "default_popup": "html/popup.html"
+   },
+   "author": "Manjunadha Abhinai (ViTrendz)",
+   "background": {
+      "service_worker": "service_worker/background.js"
+   },
+   "content_scripts": [
+      {
+         "js": [
+            "js/attendance.js",
+            "js/marks_page.js",
+            "js/course_page.js",
+            "js/navbar.js",
+            "js/da_upload.js",
+            "js/exam_schedule.js",
+            "js/time_table.js"
+         ],
+         "matches": [
+            "*://vtop.vit.ac.in/*"
+         ],
+         "exclude_matches": [
+            "*://vtop.vit.ac.in/vtop/login"
+         ]
+      },
+      {
+         "js": [
+            "js/captcha/bitmaps.js",
+            "js/captcha/captchaparser.js"
+         ],
+         "matches": [
+            "*://vtop.vit.ac.in/vtop/login"
+         ]
+      }, {
+         "css": [
+            "css/navbar.css"
+         ],
+         "matches": [
+            "*://vtop.vit.ac.in/vtop/*"
+         ]
+      }
+   ],
+   "description": "Enhance your VTOP in one click",
+   "host_permissions": [
+      "*://vtop.vit.ac.in/*"
+   ],
+   "icons": {
+      "128": "assets/icons/img_128.png",
+      "16": "assets/icons/img_16.png",
+      "48": "assets/icons/img_48.png"
+   },
+   "manifest_version": 3,
+   "name": "ViBoot",
+   "oauth2": {
+      "client_id": "208230014476-3b0u1ld7t9j08aopogkjrocbtahp1h9v.apps.googleusercontent.com",
+      "scopes": [
+         "https://www.googleapis.com/auth/calendar"
+      ]
+   },
+   "permissions": [
+      "webRequest",
+      "downloads",
+      "storage",
+      "tabs",
+      "identity",
+      "alarms",
+      "identity.email",
+      "notifications"
+   ],
+   "version": "2.1.12",
+   "web_accessible_resources": [
+      {
+         "matches": [
+            "*://*.vit.ac.in/*"
+         ],
+         "resources": [
+            "js/captcha/weights.json"
+         ]
+      }
+   ]
+}
