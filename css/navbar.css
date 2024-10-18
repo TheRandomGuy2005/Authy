@@ -1,0 +1,302 @@
+:root {
+    --md-sys-color-primary: rgb(76 102 43);
+    --md-sys-color-surface-tint: rgb(76 102 43);
+    --md-sys-color-on-primary: rgb(255 255 255);
+    --md-sys-color-primary-container: rgb(205 237 163);
+    --md-sys-color-on-primary-container: rgb(16 32 0);
+    --md-sys-color-secondary: rgb(88 98 73);
+    --md-sys-color-on-secondary: rgb(255 255 255);
+    --md-sys-color-secondary-container: rgb(220 231 200);
+    --md-sys-color-on-secondary-container: rgb(21 30 11);
+    --md-sys-color-tertiary: rgb(56 102 99);
+    --md-sys-color-on-tertiary: rgb(255 255 255);
+    --md-sys-color-tertiary-container: rgb(188 236 231);
+    --md-sys-color-on-tertiary-container: rgb(0 32 30);
+    --md-sys-color-error: rgb(186 26 26);
+    --md-sys-color-on-error: rgb(255 255 255);
+    --md-sys-color-error-container: rgb(255 218 214);
+    --md-sys-color-on-error-container: rgb(65 0 2);
+    --md-sys-color-background: rgb(249 250 239);
+    --md-sys-color-on-background: rgb(26 28 22);
+    --md-sys-color-surface: rgb(249 250 239);
+    --md-sys-color-on-surface: rgb(26 28 22);
+    --md-sys-color-surface-variant: rgb(225 228 213);
+    --md-sys-color-on-surface-variant: rgb(68 72 61);
+    --md-sys-color-outline: rgb(117 121 108);
+    --md-sys-color-outline-variant: rgb(197 200 186);
+    --md-sys-color-shadow: rgb(0 0 0);
+    --md-sys-color-scrim: rgb(0 0 0);
+    --md-sys-color-inverse-surface: rgb(47 49 42);
+    --md-sys-color-inverse-on-surface: rgb(241 242 230);
+    --md-sys-color-inverse-primary: rgb(177 209 138);
+    --md-sys-color-primary-fixed: rgb(205 237 163);
+    --md-sys-color-on-primary-fixed: rgb(16 32 0);
+    --md-sys-color-primary-fixed-dim: rgb(177 209 138);
+    --md-sys-color-on-primary-fixed-variant: rgb(53 78 22);
+    --md-sys-color-secondary-fixed: rgb(220 231 200);
+    --md-sys-color-on-secondary-fixed: rgb(21 30 11);
+    --md-sys-color-secondary-fixed-dim: rgb(191 203 173);
+    --md-sys-color-on-secondary-fixed-variant: rgb(64 74 51);
+    --md-sys-color-tertiary-fixed: rgb(188 236 231);
+    --md-sys-color-on-tertiary-fixed: rgb(0 32 30);
+    --md-sys-color-tertiary-fixed-dim: rgb(160 208 203);
+    --md-sys-color-on-tertiary-fixed-variant: rgb(31 78 75);
+    --md-sys-color-surface-dim: rgb(218 219 208);
+    --md-sys-color-surface-bright: rgb(249 250 239);
+    --md-sys-color-surface-container-lowest: rgb(255 255 255);
+    --md-sys-color-surface-container-low: rgb(243 244 233);
+    --md-sys-color-surface-container: rgb(238 239 227);
+    --md-sys-color-surface-container-high: rgb(232 233 222);
+    --md-sys-color-surface-container-highest: rgb(226 227 216);
+}
+
+
+body {
+    background: var(--md-sys-color-background) !important;
+}
+
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    border-radius: 20px;
+}
+
+.table-responsive {
+    overflow-x: inherit !important;
+}
+
+.card,
+.table {
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    background: var(--md-sys-color-background) !important;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px !important;
+}
+
+.col-md-3,
+.col-lg-3,
+.col-xl-3 {
+    width: 30% !important;
+}
+
+.col-md-9,
+.col-lg-9,
+.col-xl-9 {
+    width: 70% !important;
+}
+
+.dashboard-cards {
+    margin-top: 10px !important;
+}
+
+.bi-arrow-down-circle,
+.nav-tabs .nav-link.active {
+    border-radius: 10px !important;
+    padding: 5px !important;
+}
+
+.nav-tabs {
+    padding: 5px !important;
+}
+
+#quickLinks {
+    display: none !important;
+}
+
+/* Side Menu */
+
+#vtopHeader {
+    margin: 5px !important;
+    border-radius: 20px !important;
+    overflow: inherit !important;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px !important;
+    background: grey !important;
+}
+
+.SideBarMenuBtn:hover {
+    background: var(--md-sys-color-primary-container) !important;
+    border-radius: 16px !important;
+}
+
+/* .offcanvas-body .accordion,
+.offcanvas-body>.accordtion {
+    background-color: #1a1a1a !important;
+} */
+
+#expandedSideBar .offcanvas-body .accordion .accordion-item {
+    background: var(--md-sys-color-secondary-container) !important;
+    padding: .5rem !important;
+}
+
+.offcanvas-header {
+    margin: 5px !important;
+    border-radius: 20px !important;
+    overflow: inherit !important;
+    background: grey !important;
+}
+
+.offcanvas-header>button {
+    margin: auto 0 !important;
+}
+
+.offcanvas-body>div>.menuFontStyle {
+    background: var(--md-sys-color-secondary-container) !important;
+    border-radius: 20px !important;
+    padding: .5rem !important;
+}
+
+.offcanvas-body .accordion,
+.offcanvas-body .accordion .accordion-collapse {
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    background: transparent !important;
+}
+
+.offcanvas-body .accordion .accordion-button:focus {
+    border-bottom: 1px solid grey !important;
+    box-shadow: none !important;
+}
+
+/*.offcanvas-body .accordion .accordion-item .accordion-body {
+    background: var(--md-sys-color-secondary-container) !important;
+}*/
+
+/* #sidePanel.btnBarColor {
+  background-color: transparent !important;
+} */
+
+#sidePanel .btn-toolbar {
+    margin-top: 2rem !important;
+}
+
+#sidePanel .accordion .accordion-item .accordion-button {
+    color: black !important;
+}
+
+#sidePanel .accordion .accordion-item {
+    background: transparent !important;
+}
+
+.dropdown-menu.show {
+    border-radius: 20px !important;
+    background: var(--md-sys-color-background) !important;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px, rgba(0, 0, 0, 0.06) 0px 0px 0px 2px !important;
+}
+
+.dropdown-menu.show .menuHeaderColor {
+    background: transparent !important;
+    border-bottom: 1px solid lightslategrey !important;
+}
+
+/* Loader */
+.blockUI.blockMsg.blockPage {
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 20px !important;
+    overflow: hidden !important;
+}
+
+/* Main Page */
+.list-group .list-group-item {
+    background: var(--md-sys-color-background) !important;
+}
+
+#b5-pagewrapper {
+    margin-top: 3rem !important;
+}
+
+/* Profile Page */
+
+#b5-pagewrapper .accordion .accordion-item .accordion-body {
+    background: var(--md-sys-color-secondary-container) !important;
+}
+
+#b5-pagewrapper #accordion-style-1 .accordion-item {
+    border-radius: 20px !important;
+    overflow: hidden !important;
+}
+
+#b5-pagewrapper #accordion-style-1 .accordion-item .accordion-button {
+    background: var(--md-sys-color-primary-container) !important;
+    color: black !important;
+}
+
+/* Credentials */
+#page-wrapper .box,
+.box {
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px, rgba(0, 0, 0, 0.06) 0px 0px 0px 2px !important;
+    background: var(--md-sys-color-background);
+    position: initial;
+    border-top: initial;
+    margin-bottom: initial;
+    width: initial;
+}
+
+.primaryBorderTop {
+    border: none !important;
+}
+
+.col-md-12,
+.WhiteBackground {
+    background-color: transparent !important;
+}
+
+#b3wrapper .col-sm-12 {
+    margin-top: 2rem !important;
+}
+
+.customTable tr.tableHeader,
+.customTable tr.tableHeader td,
+.customTable tr.tableHeader th,
+.customTable-level1 tr.tableHeader-level1,
+.customTable-level1 tr:last-child {
+    background: var(--md-sys-color-tertiary-container) !important;
+    color: black !important;
+}
+
+.customTable tr.tableContent .customTable-level1 tr.tableContent-level1,
+.customTable-level1 tr.tableHeader-level1,
+.customTable-level1 tr.tableHeader-level1 td,
+.customTable-level1 tr.tableHeader-level1 th {
+    background: transparent !important;
+}
+
+.btn-outline-primary:hover, .btn-success {
+    background: var(--md-sys-color-primary-container) !important;
+    border-radius: 20px !important;
+}
+
+.btn-outline-primary:focus {
+    box-shadow: none !important;
+}
+
+.btn-outline-primary {
+    border-radius: 20px !important;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: #1e2125 !important;
+    background-color: #e9ecef !important;
+}
+
+.form-select {
+    background: var(--md-sys-color-background) !important;
+}
+
+#main-section .btn-primary, table .btn-primary {
+    background: var(--md-sys-color-primary-container) !important;
+    border-color: var(--md-sys-color-primary-container) !important;
+    color: black !important;
+    border-radius: 50px !important;
+}
+
+button.float-end.bi.bi-arrow-down-circle {
+  background: var(--md-sys-color-primary-fixed) !important;
+  padding: 8px;
+}
